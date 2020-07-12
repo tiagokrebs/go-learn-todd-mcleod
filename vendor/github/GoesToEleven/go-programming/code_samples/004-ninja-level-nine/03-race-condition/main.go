@@ -13,6 +13,8 @@ func main() {
 	gs := 100
 	wg.Add(gs)
 
+	// as goroutines vao iniciar diversas race conditions devido ao 
+	// acesso e alteracao constante em incrementer
 	for i := 0; i < gs; i++ {
 		go func() {
 			v := incrementer
