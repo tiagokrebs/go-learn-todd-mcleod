@@ -18,6 +18,7 @@ func main() {
 
 func receive(e, o, q <-chan int) {
 	for {
+		// select action by the diferent channels when something is reeceived
 		select {
 		case v := <-e:
 			fmt.Println("from the eve channel:", v)

@@ -5,10 +5,10 @@ import "fmt"
 func main() {
 	c := make(chan int)
 
-	// send
+	// detach send to channel
 	go foo(c)
 
-	// receive
+	// block until channel receive something
 	bar(c)
 
 	fmt.Println("about to exit")

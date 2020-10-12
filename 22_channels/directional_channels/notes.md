@@ -1,0 +1,2 @@
+- Channels podem ser direcionais: only receive ou only send.
+- Channel é um type logo práticas como conversão e atribução são possíveis. Uma das regras mais básicas é que pode-se converter um channel desde que seja para uma precisão menor. Exemplo: um channel bidirecional pode ser convertido/atribuido a um channel only read/send mas não ao contrário, um channel only read/send nunca poderá ser convertido/atribuído a o tipo bidirecional.
